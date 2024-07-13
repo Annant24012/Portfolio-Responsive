@@ -12,10 +12,10 @@
         <div class="logo">Annant Gupta</div>
         <div>
             <ul class="nav-links">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -28,14 +28,65 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                    <li><a href="#" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#" onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="#" onclick="toggleMenu()">projects</a></li>
-                    <li><a href="#" onclick="toggleMenu()">Contact</a></li>
+                    <li><a href="#About" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
+                    <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
             
             </div>
         </div>
     </nav>
-    <script src="script.js"></script>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img class="img-pro" src="./assets/profile.jpeg" alt="Annant-gupta-profile " >
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello,    I'm</p>
+            <h1 class="title">Annant Gupta</h1>
+            <p class="section__text__p2"> Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/CV_ANNANT12.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#Contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="my linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/annant-gupta-5321b8235?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'"/>
+                <img src="./assets/github.png" alt="my github profile " class="icon" onclick="location.href='https://github.com/Annant24012'"  target="_blank"/>
+            </div>
+        </div>
+    </section>
+    <section id="About">
+        <p class="section__text__p1"> Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="profile picture"
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                   <div class="details-container">
+                    <img src="./assets/experience.png" alt="experience icon" class="icon"/>
+                    <h3>Experience</h3>
+                   <p>Fresher <br>Frontend Development</p>
+                   </div>    
+                   <div class="details-container">
+                    <img src="./assets/education.png" alt="education icon" class="icon"/>
+                    <h3>Education</h3>
+                   <p>Btech bachelors of technology</p>
+                   </div>
+                </div> 
+                <div class="texr-container">
+                    <p>I am a 3rd-year B.Tech student specializing in Computer Science and Engineering. I have a strong passion for frontend development, where I focus on creating visually appealing and user-friendly web interfaces. My skills include HTML, CSS, JavaScript, and I am continuously expanding my knowledge to include modern frontend frameworks and libraries. I enjoy turning creative ideas into functional and responsive web applications, aiming to enhance user experiences through clean and efficient code.</p>
+
+                </div>   
+            </div>    
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon"
+        class="icon arrow" onclick="location.href='./#Experience'"/>
+    </section>
+
+    <script src="script.js">
+        
+    </script>
 </body>
 </html>
