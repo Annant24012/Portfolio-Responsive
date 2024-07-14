@@ -6,6 +6,10 @@
   .about-containers {
     flex-wrap: wrap;
   }
+  #socials-container img{
+    margin-left:0.5rem;
+    
+  }
   #contact,
   #projects {
     height: fit-content;
@@ -54,7 +58,15 @@
   }
   #profile {
     height: 83vh;
-    margin-bottom: 0;
+    margin-bottom: 10px;
+  }
+  #socials-container{
+    margin-top: 1rem;
+    
+  }
+  #socials-container img{
+    margin-left:0.5rem;
+    
   }
   article {
     font-size: 1rem;
